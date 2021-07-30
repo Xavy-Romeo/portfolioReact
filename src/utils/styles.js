@@ -17,6 +17,10 @@ const secondaryColor = 'rgb(195, 2, 2)';
 // });
 
 export const useStyles = makeStyles({
+    headerActive: {
+        transform: 'scaleY(.7) translate(0%, -30%)'
+    },
+
     appBar: {
         position: '-webkit-sticky', /* to support Safari */
         position: 'sticky',
@@ -35,9 +39,9 @@ export const useStyles = makeStyles({
     },
 
     nameContainer: {
-        marginBottom: '10px'
+        // marginBottom: '10px'
     },
-    
+
     myName: {
         margin: '20px',
         color: secondaryColor,
@@ -58,9 +62,7 @@ export const useStyles = makeStyles({
     },
 
     navLI: {
-        marginTop: '40px',
-        position: 'relative',
-        display: 'block'
+        marginTop: '20px',
     },
 
     listSpan: {
@@ -71,25 +73,25 @@ export const useStyles = makeStyles({
         display: 'block',
         whiteSpace: 'nowrap',
         margin: '0 30px',
-        transition: '.05s',
+        width: '100%',
         '&:before': {
             position: 'absolute',
             content: 'attr(id)',
-            top: 40,
+            top: -60,
             opacity: 0,
-            transition: '.5s'
+            transition: '.2s',
         },
         '&:hover': {
             color: 'black',
-            fontSize: 30,
+            fontSize: '40px',
             textShadow: `1px 1px ${primaryColor}`,
-            transform: 'translateY(-50%)',
-            transition: '.05s'
+            transform: 'translateY(10%)',
+            transition: '.2s ease'
         },
         '&:hover:before': {
             top: 0,
             opacity: 1,
-            transition: '.5s',
+            transition: '.3s ease',
             textDecoration: 'underline'
         }
     },

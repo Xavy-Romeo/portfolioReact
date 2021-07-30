@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { throttle, debounce } from '../../utils';
 
+// import components
 import Nav from '../Nav';
 
 // import Material UI components
@@ -10,9 +12,26 @@ import Box from "@material-ui/core/Box";
 import Link from '@material-ui/core/Link';
 
 export default function Header({ classes }) {
-    
+    const [headerActive, setHeaderActive] = useState(false);
+
+    const changeHeader = () => {
+        if (window.scrollY > 50) {
+            setHeaderActive(true);
+        }
+        else {
+            setHeaderActive(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', throttle(debounce(changeHeader)));
+        return () => window.removeEventListener('scroll', throttle(debounce(changeHeader)));
+    }, []);
+
+
+
     return (
-        <AppBar className={classes.appBar}>
+        <AppBar className={headerActive ? `${classes.appBar} ${classes.headerActive}` : `${classes.appBar}`}>
             <Toolbar className={classes.toolBar}>
                 <Box className={classes.nameContainer}>
                     <Link

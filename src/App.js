@@ -26,7 +26,7 @@ function App() {
           <Switch>
             
             <Route exact path='/'>
-              <Landing />
+              <Landing classes={classes} />
             </Route>
             
             <Route exact path='/XR'>

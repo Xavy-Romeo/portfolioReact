@@ -39,7 +39,7 @@ export const useStyles = makeStyles({
     },
 
     nameContainer: {
-        // marginBottom: '10px'
+        marginBottom: '10px'
     },
 
     myName: {
@@ -97,9 +97,64 @@ export const useStyles = makeStyles({
     },
 
     landing: {
-        backgroundColor: 'rgb(22, 22, 22)',
-        height: '2000px'
-    }
+        height: '1500px'
+    },
 
+    footerTop: {
+        margin: '0',
+        // backgroundColor: 'rgb(13, 147, 173)',
+        // backgroundColor: 'rgba(212, 25, 25, .6)',
+        backgroundColor: 'rgba(7, 7, 7)',
+        height: '200px',
+        width: '100%'
+    }, 
+
+    footerBottom: {
+        // background: 'linear-gradient(349deg, rgba(2,0,36,1) 0%, rgba(114,18,20,1) 16%, rgba(121,9,9,1) 47%, rgba(10,163,194,1) 100%)',
+        height: '100%',
+        // backgroundColor: 'rgba(195, 2, 2, .6)'
+        backgroundColor: 'black',
+        display: 'flex',
+        justifyContent: 'space-between',
+        padding: '10px 25px',
+        marginBottom: 0
+    },
+
+    footerCopy: {
+        color: secondaryColor,
+        fontSize: '20px',
+        fontWeight: 'bold',
+        // textShadow: `1px 1px ${primaryColor}`
+    },
+
+    marqueeContainer: {
+        
+        overflow: 'hidden',
+        position: 'relative'
+    },
+    
+    marquee: {
+        margin: '0 10px',
+        fontWeight: 'bold',
+        color: primaryColor,
+        textShadow: '3px 3px 5px rgb(60,60,60)',
+        alignItems: 'center',
+        '&:hover': {
+            color: secondaryColor
+        }
+    },
+
+    marqueeIcon: {
+        margin: '-6px 10px'
+    },
+
+
+
+
+    // PAPER TESTS
+    paperTest: {
+        backgroundColor: secondaryColor,
+        width: '100%'
+    }
 
 });

@@ -41,7 +41,6 @@ export default function Nav({ classes }) {
                     </Typography>
                 </ListItem>
             ))}           
-               
         </List>
     );
     

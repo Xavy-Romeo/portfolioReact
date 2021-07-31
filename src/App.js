@@ -7,6 +7,7 @@ import Content from './pages/Content';
 import Landing from './pages/Landing';
 // import components
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 // import styles
 import './App.css';
@@ -18,24 +19,20 @@ function App() {
   return (
     <ThemeProvider>
       <Router>
-        <div>
-          <Header
-            classes={classes}
-          />
-
+          <Header classes={classes} />
+          
           <Switch>
-            
             <Route exact path='/'>
               <Landing classes={classes} />
             </Route>
             
             <Route exact path='/XR'>
-              <Content />
+              <Content classes={classes} />
             </Route>
-
           </Switch>
+
+          <Footer classes={classes} />
           
-        </div>
       </Router>
     </ThemeProvider>
   );

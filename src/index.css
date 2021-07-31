@@ -28,8 +28,8 @@ body {
     animation: App-logo-spin infinite 5s linear;
   }
 
-  .mui-logo {
-    animation: logo-flip infinite 3s linear;
+  .mui-logo, .xavy-logo {
+    animation: logo-flip infinite 5s linear;
   }
 
   .footer-marquee {

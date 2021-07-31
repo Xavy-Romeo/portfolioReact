@@ -101,13 +101,44 @@ export const useStyles = makeStyles({
     },
 
     footerTop: {
-        margin: '0',
-        // backgroundColor: 'rgb(13, 147, 173)',
-        // backgroundColor: 'rgba(212, 25, 25, .6)',
-        backgroundColor: 'rgba(7, 7, 7)',
-        height: '200px',
-        width: '100%'
+        backgroundColor: 'rgba(5, 5, 5)',
     }, 
+
+    footerHeader: {
+        borderBottom: `2px solid ${primaryColor}`,
+        width: '50%',
+        margin: '0 auto 20px auto',
+
+    },
+
+    footerHeaderName: {
+        margin: '10px',
+        color: secondaryColor,
+        fontSize: '40px',
+        fontFamily: 'Kaushan Script, sans-sefif',
+        fontWeight: 'bold',
+    },
+
+    footerMiddle: {
+        paddingBottom: '20px'
+    },
+    
+    
+    contactLinks: {
+        display: 'flex',
+        marginRight: '5px'
+    },
+
+
+
+
+
+
+
+
+
+
+
 
     footerBottom: {
         // background: 'linear-gradient(349deg, rgba(2,0,36,1) 0%, rgba(114,18,20,1) 16%, rgba(121,9,9,1) 47%, rgba(10,163,194,1) 100%)',
@@ -147,14 +178,5 @@ export const useStyles = makeStyles({
     marqueeIcon: {
         margin: '-6px 10px'
     },
-
-
-
-
-    // PAPER TESTS
-    paperTest: {
-        backgroundColor: secondaryColor,
-        width: '100%'
-    }
 
 });

@@ -17,20 +17,19 @@ export default function Footer({ classes }) {
             
 
             <Grid container className={classes.footerBottom} direction='row' justifyContent='space-between' alignItems='center' spacing={1}>
+                
                 <Grid item xs={1}>
                     <Grid container direction='row' justifyContent='flex-start' alignItems='center' xs={2} spacing={2}>
                         <img src={xavyLogo} height='70px' />
                     </Grid>
                 </Grid>
 
-                <Grid item xs={9}>
-                    <Box className={classes.marqueeContainer}>
-                        <Typography variant='h4' className={`footer-marquee ${classes.marquee}`} >
-                            <SentimentVerySatisfiedSharpIcon className={classes.marqueeIcon} fontSize='large'/>
-                            Thank you for visting my site!!! 
-                            <SentimentVerySatisfiedSharpIcon className={classes.marqueeIcon} fontSize='large'/>
-                        </Typography>
-                   </Box>
+                <Grid item xs={9} className={classes.marqueeContainer}>
+                    <Typography variant='h4' className={`footer-marquee ${classes.marquee}`} >
+                        <SentimentVerySatisfiedSharpIcon className={classes.marqueeIcon} fontSize='large'/>
+                        Thank you for visting my site!!! 
+                        <SentimentVerySatisfiedSharpIcon className={classes.marqueeIcon} fontSize='large'/>
+                    </Typography>
                 </Grid>
 
                 <Grid item xs={2}>

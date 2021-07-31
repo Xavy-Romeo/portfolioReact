@@ -5,25 +5,18 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import SvgIcon from '@material-ui/core/SvgIcon';
 import Paper from '@material-ui/core/Paper';
+import Container from '@material-ui/core/Container';
 
 import BuildIcon from '@material-ui/icons/Build';
 import MuiLogo from '../../assets/muiLogo.png';
-
+import xavyLogo from '../../assets/xavyLogo.png';
 
 export default function FooterTop({ classes }) {
     return (
-        <>
-            <Box className={classes.footerTop} boxShadow={10}>
+       
+            /* <Box className={classes.footerTop} boxShadow={10}>
 
-                {/* Section 1 - Contact Links
-                    Section 2 - Google Map
-                    Section 3 - Built with
-                */}
-
-
-
-
-                    <Grid container>
+                                   <Grid container>
                         <Typography className={classes.test}>
                             FooterTop
                         </Typography>
@@ -32,9 +25,9 @@ export default function FooterTop({ classes }) {
 
             </Box>
 
-                {/*33333333333  */}
+               
                 <Grid container item direction='row' alignItems='center' xs={3} spacing={1}>
-                    {/* 6 */}  
+                
                     <Grid item xs={6} style={{display: 'flex'}}>
                         <Paper style={{backgroundColor:'gray', display: 'flex'}}>
                             <BuildIcon color='primary' fontSize='large'/>
@@ -47,7 +40,6 @@ export default function FooterTop({ classes }) {
                     </Grid>
                      
 
-                    {/* 6 */}
                     <Grid container item direction='column' justifyContent='flex-start' spacing={1} xs={6}>
                         <Paper style={{ backgroundColor: 'gray' }}>
                             <Grid item style={{display: 'flex', border: '1px solid red'}}>
@@ -71,12 +63,93 @@ export default function FooterTop({ classes }) {
                             </Grid>
                         </Paper>
                     </Grid>
+                </Grid> */
+
+
+
+
+                 /* Section 1 - Contact Links
+                    Section 2 - Google Map
+                    Section 3 - Built with
+                */
+
+                
+        <Box className={classes.footerTop}>
+            
+            <Grid container className={classes.footerHeader} justifyContent='center' alignItems='center'>
+                <img src={xavyLogo}  className='xavy-logo' height='50px' />
+                <Typography className={classes.footerHeaderName} variant='h5' component='h3' color='primary'>
+                    Xavy Romeo
+                </Typography>
+            </Grid>
+       
+            <Grid container className={classes.footerMiddle} justifyContent='center' alignItems='flex-start' spacing={2}>
+                
+                <Grid item xs={3}>
+                    <Paper>
+                    <Grid container direction='column'>
+                        <Typography variant='h6' component='h4'>
+                            Contact Links
+                        </Typography>
+                        <Grid item className={classes.contactLinks}>
+                            <BuildIcon/>
+                            <Typography>
+                                Gmail:
+                            </Typography>
+                        </Grid>
+                        <Grid item className={classes.contactLinks}>
+                            <BuildIcon/>
+                            <Typography>
+                                LinkedIn:
+                            </Typography>
+                        </Grid>
+                        <Grid item className={classes.contactLinks}>
+                        <BuildIcon/>
+                            <Typography>
+                                GitHub:
+                            </Typography>
+                        </Grid>
+                            
+                    </Grid>
+                    </Paper>
                 </Grid>
 
+                <Grid item xs={5}>
+                    <Paper>
+                    <Grid container>
+                        <Typography variant='h6' component='h4'>
+                            Map
+                        </Typography>
+                    </Grid>
+                    </Paper>
+                </Grid>
 
+                <Grid item xs={3}>
+                    <Paper>
+                    <Grid container direction='column'>
+                        <Typography variant='h6' component='h4'>
+                            Built With
+                        </Typography>
+                        <Grid item className={classes.contactLinks}>
+                            <BuildIcon/>
+                            <Typography>
+                                Gmail:
+                            </Typography>
+                        </Grid>
+                        <Grid item className={classes.contactLinks}>
+                            <BuildIcon/>
+                            <Typography>
+                                LinkedIn:
+                            </Typography>
+                        </Grid>
 
+                    </Grid>
+                    </Paper>
+                </Grid>
 
+            </Grid>
 
-        </>
+        </Box>
+       
     );
 };

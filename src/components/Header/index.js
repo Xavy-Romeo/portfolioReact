@@ -15,7 +15,7 @@ export default function Header({ classes }) {
     const [headerActive, setHeaderActive] = useState(false);
 
     const changeHeader = () => {
-        if (window.scrollY > 50) {
+        if (window.scrollY > 5) {
             setHeaderActive(true);
         }
         else {

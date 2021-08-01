@@ -97,16 +97,16 @@ export const useStyles = makeStyles({
     },
 
     landing: {
-        height: '1500px'
+        height: '1000px'
     },
 
     footerTop: {
-        backgroundColor: 'rgba(5, 5, 5)',
+        backgroundColor: 'rgba(10, 10, 10)',
     }, 
 
     footerHeader: {
         borderBottom: `2px solid ${primaryColor}`,
-        width: '50%',
+        width: '70%',
         margin: '0 auto 20px auto',
 
     },
@@ -117,19 +117,35 @@ export const useStyles = makeStyles({
         fontSize: '40px',
         fontFamily: 'Kaushan Script, sans-sefif',
         fontWeight: 'bold',
+       
     },
 
     footerMiddle: {
         paddingBottom: '20px'
     },
     
+    footerMiddleHeaders: {
+        color: secondaryColor,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderBottom: `1px solid ${primaryColor}`, 
+        width: '100%',
+       
+    },
+
+    footerMiddleText: {
+        color: primaryColor
+    },
     
     contactLinks: {
         display: 'flex',
-        marginRight: '5px'
+        alignItems: 'center',
     },
 
-
+    test: {
+        backgroundColor: 'rgb(15,15,15)'
+    },
 
 
 

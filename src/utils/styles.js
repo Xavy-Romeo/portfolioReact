@@ -122,7 +122,7 @@ export const useStyles = makeStyles({
 
     footerMiddle: {
         paddingBottom: '20px'
-    },
+},
     
     footerMiddleHeaders: {
         color: secondaryColor,
@@ -131,30 +131,53 @@ export const useStyles = makeStyles({
         justifyContent: 'center',
         borderBottom: `1px solid ${primaryColor}`, 
         width: '100%',
-       
+        marginBottom: '10px',
+        paddingBottom: '5px',
+    },
+
+    iconFooterHeaders: {
+        marginRight: '10px'
     },
 
     footerMiddleText: {
-        color: primaryColor
-    },
-    
-    contactLinks: {
+        color: primaryColor,
         display: 'flex',
+        alignItems: 'center'
+    },
+
+    connectLogos: {
+        backgroundColor: 'rgb(150,150,150)',
+        height: '50px',
+        width: '50px',
+        display: 'flex',
+        justifyContent: 'center',
         alignItems: 'center',
+        borderRadius: '7px',
+        border: `2px solid ${secondaryColor}`,
+        marginRight: '20px',
+        '&:hover': {
+            backgroundColor: 'white'
+        }
+    
     },
 
-    test: {
-        backgroundColor: 'rgb(15,15,15)'
+    map: {
+        width: '100%',
+        height: '100%',
+        borderRadius: '7px',
+        border: `3px solid ${secondaryColor}`
     },
 
-
-
-
-
-
-
-
-
+    builtWithItems: {
+        display: 'flex',
+        margin: '0 5px 10px 10px',
+        // border: `1px solid ${primaryColor}`,
+        // borderRadius: '50px',
+        padding: '5px',
+        // height: '60px',
+        // width: '175px',
+        // backgroundColor: 'rgb(20,20,20)',
+    },
 
     footerBottom: {
         // background: 'linear-gradient(349deg, rgba(2,0,36,1) 0%, rgba(114,18,20,1) 16%, rgba(121,9,9,1) 47%, rgba(10,163,194,1) 100%)',
@@ -177,17 +200,16 @@ export const useStyles = makeStyles({
     marqueeContainer: {
         
         overflow: 'hidden',
-        position: 'relative'
+        position: 'relative',
     },
     
     marquee: {
         margin: '0 10px',
         fontWeight: 'bold',
-        color: primaryColor,
-        textShadow: '3px 3px 5px rgb(60,60,60)',
+        color: secondaryColor,
         alignItems: 'center',
         '&:hover': {
-            color: secondaryColor
+            color: primaryColor
         }
     },
 

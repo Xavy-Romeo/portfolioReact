@@ -20,7 +20,7 @@ body {
   }
 
   .footer-marquee {
-    animation: marquee infinite 20s linear;
+    animation: marquee infinite 30s linear;
   }
 }
 

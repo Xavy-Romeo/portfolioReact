@@ -11,7 +11,7 @@ import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import Link from '@material-ui/core/Link';
 
-export default function Header({ classes }) {
+export default function Header({ classes, setNavActive }) {
     const [headerActive, setHeaderActive] = useState(false);
 
     const changeHeader = () => {
@@ -36,7 +36,8 @@ export default function Header({ classes }) {
                 <Box className={classes.nameContainer}>
                     <Link
                         href='/'
-                        className={classes.noDecoration} 
+                        className={classes.noDecoration}
+                        onClick={() => setNavActive(false)} 
                     >
                         <Typography 
                             id='my-name'
@@ -51,6 +52,7 @@ export default function Header({ classes }) {
                 <Box>
                     <Nav 
                         classes={classes}
+                        setNavActive={setNavActive}
                     />
                 </Box>
             </Toolbar>

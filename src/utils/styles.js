@@ -100,6 +100,12 @@ export const useStyles = makeStyles({
         height: '1000px'
     },
 
+    landingImage: {
+        border: '1px solid red',
+        backgroundColor: 'rgb(80,80,80)',
+        height: '900px'
+    },
+
     footerTop: {
         backgroundColor: 'rgba(10, 10, 10)',
     }, 
@@ -146,19 +152,18 @@ export const useStyles = makeStyles({
     },
 
     connectLogos: {
-        backgroundColor: 'rgb(150,150,150)',
+        backgroundColor: primaryColor,
         height: '50px',
         width: '50px',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         borderRadius: '7px',
-        border: `2px solid ${secondaryColor}`,
+        border: `3px solid ${secondaryColor}`,
         marginRight: '20px',
         '&:hover': {
             backgroundColor: 'white'
         }
-    
     },
 
     map: {
@@ -171,18 +176,11 @@ export const useStyles = makeStyles({
     builtWithItems: {
         display: 'flex',
         margin: '0 5px 10px 10px',
-        // border: `1px solid ${primaryColor}`,
-        // borderRadius: '50px',
         padding: '5px',
-        // height: '60px',
-        // width: '175px',
-        // backgroundColor: 'rgb(20,20,20)',
     },
 
     footerBottom: {
-        // background: 'linear-gradient(349deg, rgba(2,0,36,1) 0%, rgba(114,18,20,1) 16%, rgba(121,9,9,1) 47%, rgba(10,163,194,1) 100%)',
         height: '100%',
-        // backgroundColor: 'rgba(195, 2, 2, .6)'
         backgroundColor: 'black',
         display: 'flex',
         justifyContent: 'space-between',
@@ -194,11 +192,9 @@ export const useStyles = makeStyles({
         color: secondaryColor,
         fontSize: '20px',
         fontWeight: 'bold',
-        // textShadow: `1px 1px ${primaryColor}`
     },
 
     marqueeContainer: {
-        
         overflow: 'hidden',
         position: 'relative',
     },

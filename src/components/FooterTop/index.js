@@ -3,19 +3,14 @@ import React from 'react';
 import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import SvgIcon from '@material-ui/core/SvgIcon';
 import Container from '@material-ui/core/Container';
-import Paper from '@material-ui/core/Paper';
 
-import BuildIcon from '@material-ui/icons/Build';
 import ContactMailSharpIcon from '@material-ui/icons/ContactMailSharp';
 import ExploreSharpIcon from '@material-ui/icons/ExploreSharp';
 import SentimentVerySatisfiedSharpIcon  from '@material-ui/icons/SentimentVerySatisfiedSharp';
 
 import xavyLogo from '../../assets/xavyLogo.png';
-import MuiLogo from '../../assets/muiLogo.png';
 import GitHubLogo from '../../assets/GitHub.png';
-import GmailLogo from '../../assets/Gmail.png';
 import LinkedInLogo from '../../assets/LinkedIn.svg';
 
 export default function FooterTop({ classes }) {
@@ -144,7 +139,6 @@ export default function FooterTop({ classes }) {
                 </Box>
 
             </Container>
-        </Box>
-       
+        </Box>    
     );
 };

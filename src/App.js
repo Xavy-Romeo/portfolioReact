@@ -1,5 +1,4 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import React, { useState } from 'react';
 import { ThemeProvider } from '@material-ui/core/styles';
 
 // import pages
@@ -16,24 +15,21 @@ import { useStyles } from './utils/styles';
 function App() {
   const classes = useStyles();
 
+  const [navActive, setNavActive] = useState(false);
+
   return (
     <ThemeProvider>
-      <Router>
-          <Header classes={classes} />
-          
-          <Switch>
-            <Route exact path='/'>
-              <Landing classes={classes} />
-            </Route>
-            
-            <Route exact path='/XR'>
-              <Content classes={classes} />
-            </Route>
-          </Switch>
-
-          <Footer classes={classes} />
-          
-      </Router>
+      <Header 
+        classes={classes}
+        setNavActive={setNavActive} 
+      />
+      <main>
+        {!navActive 
+          ? <Landing classes={classes} />
+          : <Content classes={classes} />
+        }        
+      </main>
+      <Footer classes={classes} />
     </ThemeProvider>
   );
 }

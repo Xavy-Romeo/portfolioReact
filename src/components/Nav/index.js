@@ -4,7 +4,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import Typography from "@material-ui/core/Typography";
 
-export default function Nav({ classes }) {
+export default function Nav({ classes, setNavActive }) {
     const [navSection] = useState([
         {name: 'About Me'},
         {name: 'Contact Me'},
@@ -30,8 +30,9 @@ export default function Nav({ classes }) {
             {navSection.map((section) => (
                 <ListItem
                     onClick={() => {
-                        setCurrentSection(section.name)
                         nameLoad()
+                        setCurrentSection(section.name)
+                        setNavActive(true)
                     }} 
                     key={section.name}
                     className={classes.navLI}

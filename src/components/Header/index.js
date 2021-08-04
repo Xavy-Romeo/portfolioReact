@@ -11,7 +11,7 @@ import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import Link from '@material-ui/core/Link';
 
-export default function Header({ classes, setNavActive }) {
+export default function Header({ classes, setNavActive, navSection, setCurrentSection }) {
     const [headerActive, setHeaderActive] = useState(false);
 
     const changeHeader = () => {
@@ -53,6 +53,8 @@ export default function Header({ classes, setNavActive }) {
                     <Nav 
                         classes={classes}
                         setNavActive={setNavActive}
+                        setCurrentSection={setCurrentSection}
+                        navSection={navSection}
                     />
                 </Box>
             </Toolbar>

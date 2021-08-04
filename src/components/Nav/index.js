@@ -4,15 +4,7 @@ import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import Typography from "@material-ui/core/Typography";
 
-export default function Nav({ classes, setNavActive }) {
-    const [navSection] = useState([
-        {name: 'About Me'},
-        {name: 'Contact Me'},
-        {name: 'Portfolio'},
-        {name: 'Resume'}
-    ]);
-
-    const [currentSection, setCurrentSection] = useState(navSection[0]);
+export default function Nav({ classes, setNavActive, navSection, setCurrentSection }) {
     
     const nameLoad = () => {
         const name = document.getElementById('my-name');

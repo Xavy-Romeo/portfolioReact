@@ -16,17 +16,31 @@ function App() {
   const classes = useStyles();
 
   const [navActive, setNavActive] = useState(false);
+  
+  const [navSection] = useState([
+    {name: 'About Me'},
+    {name: 'Contact Me'},
+    {name: 'Portfolio'},
+    {name: 'Resume'}
+  ]);
+
+const [currentSection, setCurrentSection] = useState(navSection[0]);
 
   return (
     <ThemeProvider>
       <Header 
         classes={classes}
-        setNavActive={setNavActive} 
+        setNavActive={setNavActive}
+        setCurrentSection={setCurrentSection}
+        navSection={navSection}
       />
       <main>
         {!navActive 
           ? <Landing classes={classes} />
-          : <Content classes={classes} />
+          : <Content 
+              classes={classes}
+              currentSection={currentSection} 
+            />
         }        
       </main>
       <Footer classes={classes} />

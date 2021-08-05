@@ -17,14 +17,14 @@ export default function FooterTop({ classes }) {
     return (
                 
         <Box className={classes.footerTop}>
+            <Container maxWidth='xl'>
             
-            <Grid container className={classes.footerHeader} justifyContent='center' alignItems='center'>
-                <img src={xavyLogo}  className='xavy-logo' height='50px' />
-                <Typography className={classes.footerHeaderName} variant='h5' component='h3' color='primary'>
-                    Xavy Romeo
-                </Typography>
-            </Grid>
-            <Container>
+                <Grid container className={classes.footerHeader} justifyContent='center' alignItems='center'>
+                    <img src={xavyLogo}  className='xavy-logo' height='50px' />
+                    <Typography className={classes.footerHeaderName} variant='h5' component='h3' color='primary'>
+                        Xavy Romeo
+                    </Typography>
+                </Grid>
                 <Grid container className={classes.footerMiddle} justifyContent='center' alignItems='flex-start' spacing={4}>
                     
                     <Grid item xs={5}>

@@ -43,7 +43,7 @@ export const useStyles = makeStyles({
     },
 
     myName: {
-        margin: '20px',
+        marginTop: '0px',
         color: secondaryColor,
         fontSize: '50px',
         fontFamily: 'Kaushan Script, sans-sefif',
@@ -104,6 +104,69 @@ export const useStyles = makeStyles({
         border: '1px solid red',
         backgroundColor: 'rgb(80,80,80)',
         height: '900px'
+    },
+
+    sectionTitleContainer: {
+        position: 'relative'
+    },
+
+    sectionTitleShadow: {
+        fontSize: '120px',
+        textAlign: 'center',
+        width: '100%',
+        color: 'white',
+        textShadow: '10px 10px 5px rgb(220,220,220)',
+        opacity: '5%',
+        fontWeight: 'bold',
+        fontFamily: 'Londrina Outline, sans-sefif'
+    },
+
+    sectionTitle: {
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -20%)',
+        color: primaryColor,
+        textDecoration: 'underline'
+    },
+
+    profilePic: {
+        border: `5px solid ${secondaryColor}`,
+        borderRadius: '30%',
+        padding: '10px',
+    },
+
+    profilePicHello: {
+        color: primaryColor,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop: '20px'
+    },
+
+    sectionText: {
+        color: primaryColor,
+        textAlign: 'justify',
+        lineHeight: '1.6',
+        marginBottom: '30px'
+    },
+
+    sectionTextSpan: {
+        color: secondaryColor,
+        fontSize: '30px',
+        fontWeight: 'bold',
+        marginLeft: '10px'
+    },
+
+    aboutImage: {
+        marginTop: '10px',
+        border: '3px solid black',
+        borderRadius: '5px',
+        height: '80%',
+        width: '80%',
+        '&:hover': {
+            transform: 'scale(1.2)'
+        }
     },
 
     footerTop: {

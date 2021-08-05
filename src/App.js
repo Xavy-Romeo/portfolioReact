@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ThemeProvider } from '@material-ui/core/styles';
+import Container from '@material-ui/core/Container';
 
 // import pages
 import Content from './pages/Content';
@@ -35,13 +36,15 @@ const [currentSection, setCurrentSection] = useState(navSection[0]);
         navSection={navSection}
       />
       <main>
+        <Container maxWidth='xl'>
         {!navActive 
           ? <Landing classes={classes} />
           : <Content 
               classes={classes}
               currentSection={currentSection} 
             />
-        }        
+        } 
+        </Container>       
       </main>
       <Footer classes={classes} />
     </ThemeProvider>

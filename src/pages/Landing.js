@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography';
 
 export default function Landing({ classes }) {
     return (
-        <Box className={classes.landing}>
+        <Box>
             <Grid container justifyContent='center'>
                 <Grid item className={classes.landingImage} xs={11}>
                     <Typography variant='h1'>

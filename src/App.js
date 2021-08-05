@@ -11,7 +11,7 @@ import Footer from './components/Footer';
 
 // import styles
 import './App.css';
-import { useStyles } from './utils/styles';
+import { theme, useStyles } from './utils/styles';
 
 function App() {
   const classes = useStyles();
@@ -28,7 +28,7 @@ function App() {
 const [currentSection, setCurrentSection] = useState(navSection[0]);
 
   return (
-    <ThemeProvider>
+    <ThemeProvider theme={theme}>
       <Header 
         classes={classes}
         setNavActive={setNavActive}

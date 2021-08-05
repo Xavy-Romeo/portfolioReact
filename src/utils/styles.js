@@ -1,20 +1,15 @@
-// import { createTheme } from '@material-ui/core/styles';
+import { createTheme, rgbToHex } from '@material-ui/core/styles';
 import { makeStyles } from '@material-ui/core/styles';
 
 // defining attributes
 const primaryColor = 'rgb(10, 163, 194);';
 const secondaryColor = 'rgb(195, 2, 2)';
 
-// export const theme = createTheme({
-//     palette: {
-//       primary: {
-//         main: 'rgb(10, 163, 194)'
-//       },
-//       secondary: {
-//           main: 'rgb(195, 2, 2)'
-//       }
-//     }
-// });
+export const theme = createTheme({
+    typography: {
+        fontFamily: 'Cardo, Serif'
+    }
+});
 
 export const useStyles = makeStyles({
     headerActive: {
@@ -96,10 +91,6 @@ export const useStyles = makeStyles({
         }
     },
 
-    landing: {
-        height: '1000px'
-    },
-
     landingImage: {
         border: '1px solid red',
         backgroundColor: 'rgb(80,80,80)',
@@ -169,6 +160,54 @@ export const useStyles = makeStyles({
         }
     },
 
+    contactForm: {
+        border: `4px solid ${primaryColor}`,
+        borderRadius: '10px',
+        padding: '10px 20px 20px 20px',
+        backgroundColor: 'rgba(10, 163, 194, 0.4)',
+    },
+
+    contactFormLabel: {
+        marginBottom: '5px',
+        color: primaryColor,
+        textShadow: '2px 2px 5px black'
+    },
+
+    contactFromInputs: {
+        backgroundColor: 'rgb(230,230,230)',
+        minHeight: '20px',
+        borderRadius: '10px',
+        border: `3px solid ${primaryColor}`,
+        fontFamily: 'Cardo, serif',
+        fontSize: '20px',
+        fontWeight: 'bold',
+        marginBottom: '20px',
+        padding: '5px 15px',
+        '&:hover': {
+            border: `3px solid black`,
+        },
+        '&:focus': {
+            border: '3px solid white',
+            backgroundColor: 'rgb(160,160,160)',
+            outline: 'none'
+        }
+    },
+
+    formButton: {
+        border: `3px solid black`,
+        borderRadius: '10px',
+        justifyContent: 'center',
+        width: '80%',
+        margin: '0 10%',
+        padding: '5px',
+        backgroundColor: primaryColor,
+        '&:hover': {
+            border: `3px solid ${primaryColor}`,
+            color: primaryColor,
+            backgroundColor: 'black',
+        }
+    },
+
     footerTop: {
         backgroundColor: 'rgba(10, 10, 10)',
     }, 
@@ -177,7 +216,6 @@ export const useStyles = makeStyles({
         borderBottom: `2px solid ${primaryColor}`,
         width: '70%',
         margin: '0 auto 20px auto',
-
     },
 
     footerHeaderName: {
@@ -186,12 +224,11 @@ export const useStyles = makeStyles({
         fontSize: '40px',
         fontFamily: 'Kaushan Script, sans-sefif',
         fontWeight: 'bold',
-       
     },
 
     footerMiddle: {
         paddingBottom: '20px'
-},
+    },
     
     footerMiddleHeaders: {
         color: secondaryColor,

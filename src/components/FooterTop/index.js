@@ -9,9 +9,9 @@ import ContactMailSharpIcon from '@material-ui/icons/ContactMailSharp';
 import ExploreSharpIcon from '@material-ui/icons/ExploreSharp';
 import SentimentVerySatisfiedSharpIcon  from '@material-ui/icons/SentimentVerySatisfiedSharp';
 
-import xavyLogo from '../../assets/xavyLogo.png';
-import GitHubLogo from '../../assets/GitHub.png';
-import LinkedInLogo from '../../assets/LinkedIn.svg';
+import xavyLogo from '../../assets/xr-logo.png';
+import GitHubLogo from '../../assets/github-logo.png';
+import LinkedInLogo from '../../assets/linkedin-logo.svg';
 
 export default function FooterTop({ classes }) {
     return (

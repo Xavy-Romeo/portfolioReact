@@ -9,8 +9,8 @@ import Box from '@material-ui/core/Box';
 
 import BuildIcon from '@material-ui/icons/Build';
 
-import xavyLogo from '../../assets/xavyLogo.png';
-import MuiLogo from '../../assets/muiLogo.png';
+import xavyLogo from '../../assets/xr-logo.png';
+import MuiLogo from '../../assets/mui-logo.png';
 
 
 

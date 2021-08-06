@@ -5,7 +5,7 @@ import Typography from '@material-ui/core/Typography';
 
 import SentimentVerySatisfiedSharpIcon from '@material-ui/icons/SentimentVerySatisfiedSharp';
 
-import avatarPic from '../../assets/Avatar.png';
+import avatarPic from '../../assets/avatar.png';
 import plane from '../../assets/plane.jpg';
 import soccer from '../../assets/soccer.jpg';
 import weights from '../../assets/weights.jpg'
@@ -24,7 +24,7 @@ export default function About({ classes }) {
                 </Typography>
             </Grid>
 
-            <Grid container spacing={10}>
+            <Grid container  className={classes.aboutSection} spacing={10}>
                 <Grid item xs={3}>
                     <img 
                         src={avatarPic} 

@@ -10,7 +10,6 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 import Link from '@material-ui/core/Link';
-import Container from '@material-ui/core/Container';
 
 export default function Header({ classes, setNavActive, navSection, setCurrentSection }) {
     const [headerActive, setHeaderActive] = useState(false);

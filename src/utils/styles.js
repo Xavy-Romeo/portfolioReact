@@ -91,6 +91,10 @@ export const useStyles = makeStyles({
         }
     },
 
+    pageContainer: {
+        minHeight: '65vh'
+    },
+
     landingImage: {
         border: '1px solid red',
         backgroundColor: 'rgb(80,80,80)',
@@ -121,6 +125,10 @@ export const useStyles = makeStyles({
         textDecoration: 'underline'
     },
 
+    aboutSection: {
+        marginBottom: '50px'
+    },
+
     profilePic: {
         border: `5px solid ${secondaryColor}`,
         borderRadius: '30%',
@@ -146,7 +154,8 @@ export const useStyles = makeStyles({
         color: secondaryColor,
         fontSize: '30px',
         fontWeight: 'bold',
-        marginLeft: '10px'
+        marginLeft: '10px',
+        textShadow: '2px 2px 3px black'
     },
 
     aboutImage: {
@@ -164,6 +173,7 @@ export const useStyles = makeStyles({
         border: `4px solid ${primaryColor}`,
         borderRadius: '10px',
         padding: '10px 20px 20px 20px',
+        marginBottom: '50px',
         backgroundColor: 'rgba(10, 163, 194, 0.4)',
     },
 
@@ -206,6 +216,98 @@ export const useStyles = makeStyles({
             color: primaryColor,
             backgroundColor: 'black',
         }
+    },
+
+    projectFeatured: {
+        height: '300px',
+        width: '100%',
+        border: '1px solid red',
+        borderRadius: '10px',
+        marginBottom: '115px',
+        padding: '10px',
+        position: 'relative',
+        '&:hover': {
+            transform: 'scale(1.2)'
+        }
+    },
+
+    featuredImage: {
+        width: '100%',
+        height: '100%'
+    },
+
+    featuredLogo: {
+        position: 'absolute',
+        right: '5%',
+        top: '10%',
+        height: '40%'
+    },
+
+    project: {
+        height: '200px',
+        width: '100%',
+        border: '1px solid red',
+        borderRadius: '10px',
+        marginBottom: '25px',
+        padding: '10px',
+        '&:hover': {
+            transform: 'scale(1.1)'
+        }
+    },
+
+    linksDiv: {
+        position: 'absolute',
+        display: 'flex',
+        top: 0,
+        left: 0,
+        opacity: 0,
+        width: '100%',
+        height: '100%',
+        border: '2px solid black',
+        padding: '35px 0 0 40px',
+        '&:hover': {
+            opacity: 1
+        },
+    },
+
+    projectSite: {
+        fontFamily: 'Kaushan Script, sans-sefif',
+        color: 'black',
+        fontWeight: 'bold',
+        backgroundColor: primaryColor,
+        border: '2px solid black',
+        borderRadius: '10px',
+        padding: '5px 10px',
+        marginRight: '10px',
+        width: '100px',
+        display: 'flex',
+        justifyContent: 'center',
+        '&:hover': {
+            transform: 'scale(1.1)',
+            backgroundColor: 'rgb(200,200,200)',
+            border: `2px solid ${primaryColor}`
+        }
+    },
+
+    projectGithub: {
+        backgroundColor: primaryColor,
+        border: '2px solid black',
+        borderRadius: '50%',
+        width: '70px',
+        '&:hover': {
+            transform: 'scale(1.1)',
+            backgroundColor: 'rgb(200,200,200)',
+            border: `2px solid ${primaryColor}`
+        }
+    },
+
+    projectDescription: {
+        border: '2px solid black',
+        borderRadius: '10px',
+        backgroundColor: primaryColor,
+        margin: '15px 25% 0 25%',
+        width: '50%',
+
     },
 
     footerTop: {

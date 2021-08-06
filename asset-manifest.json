@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.2a6c9314.chunk.css",
+    "main.js": "/portfolio/static/js/main.9ee99b6a.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.9ee99b6a.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.d1d480f9.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.d1d480f9.js.map",
+    "static/js/2.a62f5bae.chunk.js": "/portfolio/static/js/2.a62f5bae.chunk.js",
+    "static/js/2.a62f5bae.chunk.js.map": "/portfolio/static/js/2.a62f5bae.chunk.js.map",
+    "static/js/3.c8a4dc3e.chunk.js": "/portfolio/static/js/3.c8a4dc3e.chunk.js",
+    "static/js/3.c8a4dc3e.chunk.js.map": "/portfolio/static/js/3.c8a4dc3e.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/main.2a6c9314.chunk.css.map": "/portfolio/static/css/main.2a6c9314.chunk.css.map",
+    "static/js/2.a62f5bae.chunk.js.LICENSE.txt": "/portfolio/static/js/2.a62f5bae.chunk.js.LICENSE.txt",
+    "static/media/avatar.2effc877.png": "/portfolio/static/media/avatar.2effc877.png",
+    "static/media/chips.f854e661.jpg": "/portfolio/static/media/chips.f854e661.jpg",
+    "static/media/cinfo.bb1c67dd.png": "/portfolio/static/media/cinfo.bb1c67dd.png",
+    "static/media/howru-img.7bbdee9f.jpg": "/portfolio/static/media/howru-img.7bbdee9f.jpg",
+    "static/media/linkedin-logo.9b59fa92.svg": "/portfolio/static/media/linkedin-logo.9b59fa92.svg",
+    "static/media/manage-it.f22db430.png": "/portfolio/static/media/manage-it.f22db430.png",
+    "static/media/mui-logo.5b2d8a0a.png": "/portfolio/static/media/mui-logo.5b2d8a0a.png",
+    "static/media/plane.30469ab1.jpg": "/portfolio/static/media/plane.30469ab1.jpg",
+    "static/media/run-buddy.000e1b5f.jpg": "/portfolio/static/media/run-buddy.000e1b5f.jpg",
+    "static/media/soccer.62c2f8be.jpg": "/portfolio/static/media/soccer.62c2f8be.jpg",
+    "static/media/weather-dashboard.b1c4a287.png": "/portfolio/static/media/weather-dashboard.b1c4a287.png",
+    "static/media/weights.df7808d5.jpg": "/portfolio/static/media/weights.df7808d5.jpg",
+    "static/media/xr-logo.e8991d1e.png": "/portfolio/static/media/xr-logo.e8991d1e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d1d480f9.js",
+    "static/js/2.a62f5bae.chunk.js",
+    "static/css/main.2a6c9314.chunk.css",
+    "static/js/main.9ee99b6a.chunk.js"
+  ]
+}

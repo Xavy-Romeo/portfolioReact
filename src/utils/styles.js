@@ -101,6 +101,10 @@ export const useStyles = makeStyles({
         height: '900px'
     },
 
+   componentMainContainer: {
+        marginBottom: '100px'
+   },
+
     sectionTitleContainer: {
         position: 'relative'
     },
@@ -173,7 +177,6 @@ export const useStyles = makeStyles({
         border: `4px solid ${primaryColor}`,
         borderRadius: '10px',
         padding: '10px 20px 20px 20px',
-        marginBottom: '50px',
         backgroundColor: 'rgba(10, 163, 194, 0.4)',
     },
 
@@ -221,7 +224,7 @@ export const useStyles = makeStyles({
     projectFeatured: {
         height: '300px',
         width: '100%',
-        border: '1px solid red',
+        border: `3px solid ${primaryColor}`,
         borderRadius: '10px',
         marginBottom: '115px',
         padding: '10px',
@@ -233,7 +236,11 @@ export const useStyles = makeStyles({
 
     featuredImage: {
         width: '100%',
-        height: '100%'
+        height: '100%',
+        borderRadius: '10px',
+        '&:hover': {
+            opacity: '50%'
+        }
     },
 
     featuredLogo: {
@@ -244,30 +251,42 @@ export const useStyles = makeStyles({
     },
 
     project: {
+        position: 'relative',
         height: '200px',
         width: '100%',
-        border: '1px solid red',
+        border: `2px solid ${primaryColor}`,
         borderRadius: '10px',
-        marginBottom: '25px',
+        marginBottom: '65px',
         padding: '10px',
         '&:hover': {
-            transform: 'scale(1.1)'
+            transform: 'scale(1.1)',
         }
     },
 
-    linksDiv: {
+    featuredLinksDiv: {
         position: 'absolute',
-        display: 'flex',
         top: 0,
         left: 0,
         opacity: 0,
         width: '100%',
         height: '100%',
-        border: '2px solid black',
         padding: '35px 0 0 40px',
         '&:hover': {
             opacity: 1
         },
+    },
+
+    linksDiv: {
+        position: 'absolute',
+        top: 0,
+        left: 0,
+        height: '100%',
+        width: '100%',
+        opacity: 0,
+        padding: '20px 0 0 20px',
+        '&:hover': {
+            opacity: 1
+        }
     },
 
     projectSite: {
@@ -275,38 +294,38 @@ export const useStyles = makeStyles({
         color: 'black',
         fontWeight: 'bold',
         backgroundColor: primaryColor,
-        border: '2px solid black',
+        border: '3px solid black',
         borderRadius: '10px',
         padding: '5px 10px',
         marginRight: '10px',
-        width: '100px',
+        width: '125px',
         display: 'flex',
         justifyContent: 'center',
         '&:hover': {
             transform: 'scale(1.1)',
             backgroundColor: 'rgb(200,200,200)',
-            border: `2px solid ${primaryColor}`
+            border: `3px solid ${primaryColor}`
         }
     },
 
     projectGithub: {
         backgroundColor: primaryColor,
-        border: '2px solid black',
+        border: '3px solid black',
         borderRadius: '50%',
         width: '70px',
         '&:hover': {
             transform: 'scale(1.1)',
             backgroundColor: 'rgb(200,200,200)',
-            border: `2px solid ${primaryColor}`
+            border: `3px solid ${primaryColor}`
         }
     },
 
     projectDescription: {
-        border: '2px solid black',
+        border: `2px solid black`,
         borderRadius: '10px',
         backgroundColor: primaryColor,
-        margin: '15px 25% 0 25%',
-        width: '50%',
+        margin: '15px 20% 0 20%',
+        width: '60%',
 
     },
 

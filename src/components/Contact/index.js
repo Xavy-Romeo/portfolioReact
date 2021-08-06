@@ -15,7 +15,7 @@ export default function Contact({ classes }) {
                 </Typography>
             </Grid>
 
-            <Grid container justifyContent='center'>
+            <Grid container className={classes.componentMainContainer} justifyContent='center'>
                 <Grid item xs={9}>
                     <form className={classes.contactForm}>
                         <Grid container direction='column'>

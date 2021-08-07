@@ -1,4 +1,4 @@
-import { createTheme } from '@material-ui/core/styles';
+import { createTheme, rgbToHex } from '@material-ui/core/styles';
 import { makeStyles } from '@material-ui/core/styles';
 
 // defining attributes
@@ -48,6 +48,17 @@ export const useStyles = makeStyles({
             color: 'black',
             textShadow: '3px 3px rgb(195, 2, 2)',
             transition: '1s'
+        }
+    },
+
+    menuIcon: {
+        fontSize: '60px',
+        backgroundColor: 'rgba(0,0,0,.3)',
+        border: '1px solid black',
+        color: primaryColor,
+        '&:hover': {
+            border: '1px solid white',
+            backgroundColor: 'rgb(0,0,0, .5)'
         }
     },
 
@@ -112,7 +123,6 @@ export const useStyles = makeStyles({
         left: 0,
         width: '100%',
         height: '40vh',
-        objectFit: 'cover',
         zIndex:'8'
     },
 

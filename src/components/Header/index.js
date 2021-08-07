@@ -28,8 +28,6 @@ export default function Header({ classes, setNavActive, navSection, setCurrentSe
         return () => window.removeEventListener('scroll', throttle(debounce(changeHeader)));
     }, []);
 
-
-
     return (
         <AppBar className={headerActive ? `${classes.appBar} ${classes.headerActive}` : `${classes.appBar}`}>
             <Toolbar className={classes.toolBar}>

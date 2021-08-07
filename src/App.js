@@ -36,15 +36,18 @@ const [currentSection, setCurrentSection] = useState(navSection[0]);
         navSection={navSection}
       />
       <main>
-        <Container maxWidth='xl'>
+        
         {!navActive 
           ? <Landing classes={classes} />
-          : <Content 
-              classes={classes}
-              currentSection={currentSection} 
-            />
+
+          : <Container maxWidth='xl'>
+              <Content 
+                classes={classes}
+                currentSection={currentSection} 
+              />
+            </Container> 
         } 
-        </Container>       
+              
       </main>
       <Footer classes={classes} />
     </ThemeProvider>

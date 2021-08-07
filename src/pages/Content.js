@@ -9,7 +9,7 @@ import Resume from '../components/Resume';
 
 export default function Content({ classes, currentSection }) {
     return (
-        <Box className={classes.pageContainer}>
+        <Box className={classes.contentPageContainer}>
             {currentSection === 'Contact Me' &&
                 <Contact classes={classes} />
             }

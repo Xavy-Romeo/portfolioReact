@@ -1,17 +1,10 @@
-import { createTheme, rgbToHex } from '@material-ui/core/styles';
 import { makeStyles } from '@material-ui/core/styles';
 
 // defining attributes
 const primaryColor = 'rgb(10, 163, 194);';
 const secondaryColor = 'rgb(195, 2, 2)';
 
-export const theme = createTheme({
-    typography: {
-        fontFamily: 'Cardo, Serif'
-    }
-});
-
-export const useStyles = makeStyles({
+const useStyles = makeStyles({
     headerActive: {
         transform: 'scaleY(.7) translate(0%, -30%)'
     },
@@ -518,3 +511,6 @@ export const useStyles = makeStyles({
     },
 
 });
+
+
+export default useStyles;

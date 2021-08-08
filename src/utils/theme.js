@@ -63,6 +63,12 @@ const theme = createTheme({
                 fontSize: '0.875rem'
             }
         },
+        h6:{
+            fontSize:'6rem',
+            '@media (min-width:960px)': {
+                fontSize: '7.5rem'
+            }
+        }
     }
 });
 

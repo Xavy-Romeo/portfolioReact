@@ -37,7 +37,7 @@ export default function Nav({ classes, setNavActive, navSection, setCurrentSecti
 
     return (
         <>
-            <Hidden smUp>
+            <Hidden lgUp>
                 <Box>
                     <Button>
                         <MenuIcon 
@@ -50,6 +50,12 @@ export default function Nav({ classes, setNavActive, navSection, setCurrentSecti
                         keepMounted
                         open={Boolean(anchorEl)}
                         onClose={closeMenu}
+                        PaperProps={{style: {
+                            backgroundColor: "rgba(50,50,50,.95)",
+                            border: "2px solid black",
+                            color: 'rgb(10, 163, 194)',
+                            textShadow: '1px 1px black'
+                        }}}
                     >
                         {navSection.map((section) => (
                             <MenuItem
@@ -60,9 +66,8 @@ export default function Nav({ classes, setNavActive, navSection, setCurrentSecti
                                     setAnchorEl(null)
                                 }} 
                                 key={section.name}
-                                className={classes.navLI}
                             >
-                                <Typography className={classes.listSpan} id={section.name}>
+                                <Typography  id={section.name}>
                                     {section.name}
                                 </Typography>
                             </MenuItem>
@@ -70,7 +75,7 @@ export default function Nav({ classes, setNavActive, navSection, setCurrentSecti
                     </Menu>
                 </Box>
             </Hidden>
-            <Hidden xsDown>
+            <Hidden mdDown>
                 <List className={classes.navSections}>
                     {navSection.map((section) => (
                         <ListItem

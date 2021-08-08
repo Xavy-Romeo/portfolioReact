@@ -33,7 +33,6 @@ const useStyles = makeStyles({
     myName: {
         marginTop: '0px',
         color: secondaryColor,
-        fontSize: '50px',
         fontFamily: 'Kaushan Script, sans-sefif',
         fontWeight: 'bold',
         textShadow: '4px 3px black',
@@ -93,6 +92,13 @@ const useStyles = makeStyles({
             transition: '.3s ease',
             textDecoration: 'underline'
         }
+    },
+
+    menuPaperProps: {
+        fontFamily: 'Kaushan Script, sans-sefif',
+        color: primaryColor,
+        fontSize: '24px',
+        textShadow: '1px 1px black',
     },
 
     landingPageContainer: {
@@ -186,7 +192,6 @@ const useStyles = makeStyles({
     },
 
     sectionTitleShadow: {
-        fontSize: '120px',
         textAlign: 'center',
         width: '100%',
         color: 'white',
@@ -213,6 +218,9 @@ const useStyles = makeStyles({
         border: `5px solid ${secondaryColor}`,
         borderRadius: '30%',
         padding: '10px',
+        '@media (max-width:600px)': {
+            width: '250px'
+        }
     },
 
     profilePicHello: {

@@ -34,7 +34,7 @@ export default function FooterTop({ classes }) {
                                 Contact Me
                             </Typography>
 
-                            <Grid item>
+                            {/* <Grid item>
                                 <Grid container direction='row' spacing={1} alignItems='center'>
                                     <Grid item xs={2}>
                                             <Typography className={classes.footerMiddleText} variant='h6' component='h5'>
@@ -62,7 +62,7 @@ export default function FooterTop({ classes }) {
                                         </Typography>
                                     </Grid>
                                 </Grid>  
-                            </Grid>
+                            </Grid> */}
                                 
                         </Grid>
                     </Grid>
@@ -81,11 +81,11 @@ export default function FooterTop({ classes }) {
                                             <img src={LinkedInLogo} height='75%' />
                                         </Box>
                                     </Grid>
-                                    <Grid item xs={7}>
+                                    {/* <Grid item xs={7}>
                                         <Typography className={classes.footerMiddleText} variant='h6' component='h5'>
                                             LinkedIn
                                         </Typography>
-                                    </Grid>
+                                    </Grid> */}
                                 </Grid>
                             </Grid>
 
@@ -96,11 +96,11 @@ export default function FooterTop({ classes }) {
                                             <img src={GitHubLogo} height='120%' />
                                         </Box>
                                     </Grid>
-                                    <Grid item xs={7}>
+                                    {/* <Grid item xs={7}>
                                         <Typography className={classes.footerMiddleText} variant='h6' component='h5'>
                                             GitHub
                                         </Typography>
-                                    </Grid>
+                                    </Grid> */}
                                 </Grid>
                             </Grid>
 
@@ -122,9 +122,9 @@ export default function FooterTop({ classes }) {
                                     />
                             </Grid>
 
-                            <Typography className={classes.footerMiddleText} variant='h6' component='h5'>
+                            {/* <Typography className={classes.footerMiddleText} variant='h6' component='h5'>
                                 Santa Monica, CA, USA
-                            </Typography>
+                            </Typography> */}
                         </Grid>
                     </Grid>
 

@@ -26,7 +26,7 @@ export default function Footer({ classes }) {
                                 <img src={xavyLogo} height='70px' />
                             </Grid>
                         </Grid>
-
+{/* 
                         <Grid item xs={9}>
                             <Grid container justifyContent='center' alignItems='center'>
                                 <Grid item>
@@ -59,7 +59,7 @@ export default function Footer({ classes }) {
                                 </Grid>
                             </Grid>
                             
-                        </Grid> 
+                        </Grid>  */}
 
                         <Grid item xs={2}>
                             <Grid container justifyContent='flex-end' alignItems='center'>

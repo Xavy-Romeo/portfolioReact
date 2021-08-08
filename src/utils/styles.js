@@ -136,10 +136,13 @@ const useStyles = makeStyles({
     landingCloud: {
         position: 'absolute',
         height: '30vh',
-        left: '25%',
+        left: '10%',
         top: '2%',
-        zIndex: '7'
-        
+        zIndex: '7',
+        opacity: '0',
+        '@media (min-width:1920px)': {
+            opacity: '1'
+        } 
     },
 
     landingCloud2: {
@@ -179,8 +182,18 @@ const useStyles = makeStyles({
         color: 'black',
         fontFamily: 'Kaushan Script, sans-sefif',
         fontWeight: 'bold',
+        fontSize: '3.2rem',
         textShadow: `4px 3px ${secondaryColor}`,
-        zIndex: '1'
+        zIndex: '1',
+        '@media (min-width:960px)': {
+            fontSize: '5rem'
+        },
+        '@media (min-width:1280px)': {
+            fontSize: '6rem'
+        },
+        '@media (min-width:1920px)': {
+            fontSize: '8rem'
+        }
     },
 
    componentMainContainer: {

@@ -94,7 +94,6 @@ export default function Nav({ classes, setNavActive, navSection, setCurrentSecti
                     ))}           
                 </List>
             </Hidden>
-            
         </>
     );
     

@@ -426,9 +426,15 @@ const useStyles = makeStyles({
     footerHeaderName: {
         margin: '10px',
         color: secondaryColor,
-        fontSize: '40px',
         fontFamily: 'Kaushan Script, sans-sefif',
         fontWeight: 'bold',
+    },
+
+    footerTopLogo: {
+        height: '2.5rem',
+        '@media (min-width:960px)': {
+            height: '3.125rem'
+        }
     },
 
     footerMiddle: {
@@ -493,9 +499,15 @@ const useStyles = makeStyles({
         marginBottom: 0
     },
 
+    footerLogo: {
+        height: '3.75rem',
+        '@media (min-width:960px)': {
+            height: '4.375rem'
+        }
+    },
+
     footerCopy: {
         color: secondaryColor,
-        fontSize: '20px',
         fontWeight: 'bold',
     },
 
@@ -515,7 +527,8 @@ const useStyles = makeStyles({
     },
 
     marqueeIcon: {
-        margin: '-6px 10px'
+        margin: '-6px 10px',
+        fontSize: '1.875rem',
     },
 
 });

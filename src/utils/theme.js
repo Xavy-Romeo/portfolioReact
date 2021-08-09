@@ -67,6 +67,9 @@ const theme = createTheme({
             fontSize:'6rem',
             '@media (min-width:960px)': {
                 fontSize: '7.5rem'
+            },
+            '@media (max-width:600px)': {
+                fontSize: '4.5rem'
             }
         }
     }

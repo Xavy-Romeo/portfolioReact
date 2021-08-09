@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
+import Hidden from '@material-ui/core/Hidden';
 
 import SentimentVerySatisfiedSharpIcon from '@material-ui/icons/SentimentVerySatisfiedSharp';
 
@@ -19,13 +20,13 @@ export default function About({ classes }) {
                 <Typography className={classes.sectionTitleShadow} variant='h6' component='h1'>
                     ABOUT
                 </Typography>
-                <Typography className={classes.sectionTitle} variant='h4' component='h3'>
+                <Typography className={classes.sectionTitle} variant='h4'>
                     About Xavy
                 </Typography>
             </Grid>
 
-            <Grid container  className={classes.aboutSection} spacing={10}>
-                <Grid item xs={3}>
+            <Grid container  className={classes.aboutSection}>
+                <Grid item xs={12} xl={3}>
                     <img 
                         src={avatarPic} 
                         className={classes.profilePic} 
@@ -44,7 +45,8 @@ export default function About({ classes }) {
                         : null
                     } 
                 </Grid>
-                <Grid item xs={9}>
+
+                <Grid item xs={12} xl={9}>
                     <Typography className={classes.sectionText} variant='h5' component='p' paragraph>
                         Hi, my name is 
                         <span className={classes.sectionTextSpan}>
@@ -63,17 +65,19 @@ export default function About({ classes }) {
                         working out and playing soccer.
                     </Typography>
 
-                    <Grid container justifyContent='center' spacing={2}>
-                        <Grid item xs={3}>
-                            <img src={plane} className={classes.aboutImage} alt='airplane image' />
+                    <Hidden smDown>
+                        <Grid container justifyContent='center' spacing={2}>
+                            <Grid item xs={3}>
+                                <img src={plane} className={classes.aboutImage} alt='airplane image' />
+                            </Grid>
+                            <Grid item xs={3}>
+                                <img src={weights} className={classes.aboutImage} alt='weights image' />
+                            </Grid>
+                            <Grid item xs={3}>
+                                <img src={soccer} className={classes.aboutImage} alt='soccer ball image on beach sand' />
+                            </Grid>
                         </Grid>
-                        <Grid item xs={3}>
-                            <img src={weights} className={classes.aboutImage} alt='weights image' />
-                        </Grid>
-                        <Grid item xs={3}>
-                            <img src={soccer} className={classes.aboutImage} alt='soccer ball image on beach sand' />
-                        </Grid>
-                    </Grid>
+                    </Hidden>
                 
                 </Grid>
             </Grid>

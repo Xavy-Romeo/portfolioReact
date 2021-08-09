@@ -130,7 +130,6 @@ export default function FooterTop({ classes }) {
                     </Grid>
 
                 </Grid>
-
             </Container>
 
             <Hidden xsDown>

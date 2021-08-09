@@ -228,11 +228,15 @@ const useStyles = makeStyles({
     },
 
     profilePic: {
+        display: 'flex',
+        textAlign: 'center',
         border: `5px solid ${secondaryColor}`,
         borderRadius: '30%',
         padding: '10px',
-        '@media (max-width:600px)': {
-            width: '250px'
+        maxWidth: '400px',
+        '@media (max-width:1919px)': {
+            width: '80%',
+            margin: '0 auto 20px auto'
         }
     },
 
@@ -300,6 +304,9 @@ const useStyles = makeStyles({
             border: '3px solid white',
             backgroundColor: 'rgb(160,160,160)',
             outline: 'none'
+        },
+        '@media (max-width:599px)': {
+            maxWidth: '85%',
         }
     },
 
@@ -395,7 +402,7 @@ const useStyles = makeStyles({
         borderRadius: '10px',
         padding: '5px 10px',
         marginRight: '10px',
-        width: '125px',
+        width: '140px',
         display: 'flex',
         justifyContent: 'center',
         '&:hover': {
@@ -414,6 +421,9 @@ const useStyles = makeStyles({
             transform: 'scale(1.1)',
             backgroundColor: 'rgb(200,200,200)',
             border: `3px solid ${primaryColor}`
+        },
+        '@media (max-width:1279px)': {
+            width: '50px',
         }
     },
 
@@ -421,8 +431,12 @@ const useStyles = makeStyles({
         border: `2px solid black`,
         borderRadius: '10px',
         backgroundColor: primaryColor,
-        margin: '15px 20% 0 20%',
-        width: '60%',
+        margin: '15px 12.5% 0 12.5%',
+        width: '75%',
+        '@media (max-width:450px)': {
+            width: '100%',
+            margin: '15px 0 0 0'
+        }
 
     },
 

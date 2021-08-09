@@ -22,7 +22,7 @@ export default function Footer({ classes }) {
 
                 <Box className={classes.footerBottom}>
                     <Grid container direction='row' justifyContent='space-between' alignItems='center' spacing={1}>
-                        <Grid item xs={1}>
+                        <Grid item xs={6} sm={1}>
                             <Grid container direction='row' justifyContent='flex-start' alignItems='center' xs={2} spacing={2}>
                                 <img src={xavyLogo} className={classes.footerLogo} alt='site logo' />
                             </Grid>

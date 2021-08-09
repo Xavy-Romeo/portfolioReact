@@ -489,6 +489,13 @@ const useStyles = makeStyles({
         alignItems: 'center'
     },
 
+    footerLinks: {
+        color: primaryColor,
+        '&:hover': {
+            color: secondaryColor
+        }
+    },
+
     connectLogos: {
         backgroundColor: primaryColor,
         height: '50px',

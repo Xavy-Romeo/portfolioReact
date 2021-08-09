@@ -5,6 +5,7 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 import Hidden from '@material-ui/core/Hidden';
+import Link from '@material-ui/core/Link';
 
 import ContactMailSharpIcon from '@material-ui/icons/ContactMailSharp';
 import ExploreSharpIcon from '@material-ui/icons/ExploreSharp';
@@ -43,9 +44,14 @@ export default function FooterTop({ classes }) {
                                             </Typography>
                                     </Grid>
                                     <Grid item xs={9} sm={10}>
-                                        <Typography className={classes.footerMiddleText} variant='body1'>
-                                            Xavy.Romeo.SSE@gmail.com
-                                        </Typography>
+                                        <Link 
+                                            href='mailto:Xavy.Romeo.SSE@gmail.com'
+                                            underline='none'
+                                        >
+                                            <Typography className={classes.footerLinks} variant='body1'>
+                                                Xavy.Romeo.SSE@gmail.com
+                                            </Typography>
+                                        </Link>
                                     </Grid>
                                 </Grid>
                             </Grid>
@@ -78,14 +84,31 @@ export default function FooterTop({ classes }) {
                             <Grid item>
                                 <Grid container direction='row' spacing={1} alignItems='center'>
                                     <Grid item xs={3} sm={5}>
-                                        <Box className={classes.connectLogos}>
-                                            <img src={LinkedInLogo} height='75%' />
-                                        </Box>
+                                        <Link 
+                                            href='https://www.linkedin.com/in/xavy-romeo-722076215/'
+                                            underline='none'
+                                            target='_blank'
+                                            rel='noopener'
+                                            rel='noreferrer'
+                                        >
+                                            <Box className={classes.connectLogos}>
+                                                <img src={LinkedInLogo} height='75%' />
+                                            </Box>
+                                        </Link>
+                                        
                                     </Grid>
                                     <Grid item xs={9} sm={7}>
-                                        <Typography className={classes.footerMiddleText} variant='body1'>
-                                            LinkedIn
-                                        </Typography>
+                                        <Link 
+                                            href='https://www.linkedin.com/in/xavy-romeo-722076215/'
+                                            underline='none'
+                                            target='_blank'
+                                            rel='noopener'
+                                            rel='noreferrer'
+                                        >
+                                            <Typography className={classes.footerLinks} variant='body1'>
+                                                LinkedIn
+                                            </Typography>
+                                        </Link>
                                     </Grid>
                                 </Grid>
                             </Grid>
@@ -93,14 +116,30 @@ export default function FooterTop({ classes }) {
                             <Grid item>
                                 <Grid container direction='row' spacing={1} alignItems='center'>
                                     <Grid item xs={3} sm={5}>
-                                        <Box className={classes.connectLogos}>
-                                            <img src={GitHubLogo} height='120%' />
-                                        </Box>
+                                        <Link 
+                                            href='https://github.com/Xavy-Romeo'
+                                            underline='none'
+                                            target='_blank'
+                                            rel='noopener'
+                                            rel='noreferrer'
+                                        >
+                                            <Box className={classes.connectLogos}>
+                                                <img src={GitHubLogo} height='120%' />
+                                            </Box>
+                                        </Link>
                                     </Grid>
                                     <Grid item xs={9} sm={7}>
-                                        <Typography className={classes.footerMiddleText} variant='body1'>
-                                            GitHub
-                                        </Typography>
+                                        <Link 
+                                            href='https://github.com/Xavy-Romeo'
+                                            underline='none'
+                                            target='_blank'
+                                            rel='noopener'
+                                            rel='noreferrer'
+                                        >
+                                            <Typography className={classes.footerMiddleText} variant='body1'>
+                                                GitHub
+                                            </Typography>
+                                        </Link>
                                     </Grid>
                                 </Grid>
                             </Grid>

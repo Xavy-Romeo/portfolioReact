@@ -11,7 +11,8 @@ import Footer from './components/Footer';
 
 // import styles
 import './App.css';
-import { theme, useStyles } from './utils/styles';
+import useStyles from './utils/styles';
+import theme from './utils/theme';
 
 function App() {
   const classes = useStyles();

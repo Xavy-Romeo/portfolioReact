@@ -20,17 +20,17 @@ export default function Portfolio({ classes }) {
         <>
             
             <Grid container className={classes.sectionTitleContainer} justifyContent='center'>
-                <Typography className={classes.sectionTitleShadow} variant='h1'>
+                <Typography className={classes.sectionTitleShadow} variant='h6' component='h1'>
                     PROJECTS
                 </Typography>
-                <Typography className={classes.sectionTitle} variant='h4' component='h3'>
+                <Typography className={classes.sectionTitle} variant='h4'>
                     Portfolio
                 </Typography>
             </Grid>
 
             <Grid container className={classes.componentMainContainer} justifyContent='center'>
                 
-                <Grid item className={classes.projectFeatured} xs={8}>
+                <Grid item className={classes.projectFeatured} xs={12} md={10} lg={8}>
                     <img src={HowRU} className={classes.featuredImage}/>
                     <img src={HowRULogo} className={classes.featuredLogo} />
                     <Grid container className={classes.featuredLinksDiv} alignItems='flex-start'>
@@ -46,22 +46,22 @@ export default function Portfolio({ classes }) {
                         </Grid>
                     </Grid>
                     <Grid container className={classes.projectDescription} justifyContent='center'>
-                        <Typography variant='h3'> 
+                        <Typography variant='h4'> 
                             MERN STACK
                         </Typography>
                     </Grid>
                 </Grid>
 
-                <Grid item xs={10}>
+                <Grid item xs={12} md={10}>
                     <Grid container justifyContent='space-evenly'>
                         
-                        <Grid item className={classes.project} xs={5}>
+                        <Grid item className={classes.project} xs={11} sm={10} lg={5}>
                             <img src={RunBuddy} className={classes.featuredImage}/>
 
                             <Grid container className={classes.linksDiv} alignItems='flex-start'>
                                 <Grid container alignItems='center'>
                                     <Link href='https://xavy-romeo.github.io/run-buddy/' className={classes.noDecoration} target='_blank' rel='noopener'>
-                                        <Typography className={classes.projectSite} variant='h6' component='h5'>
+                                        <Typography className={classes.projectSite} variant='subtitle2'>
                                             Run Buddy
                                         </Typography>
                                     </Link>
@@ -72,20 +72,20 @@ export default function Portfolio({ classes }) {
                             </Grid>
 
                             <Grid container className={classes.projectDescription} justifyContent='center'>
-                                <Typography variant='h5'> 
+                                <Typography variant='subtitle1'> 
                                     HTML CSS
                                 </Typography>
                             </Grid>
 
                         </Grid>
                        
-                        <Grid item className={classes.project} xs={5}>
+                        <Grid item className={classes.project} xs={11} sm={10} lg={5}>
                             <img src={DeepThoughts} className={classes.featuredImage} />
                            
                            <Grid container className={classes.linksDiv} alignItems='flex-start'>
                                <Grid container alignItems='center'>
                                    <Link href='https://deep-thoughts-random34234325.herokuapp.com/' className={classes.noDecoration} target='_blank' rel='noopener'>
-                                       <Typography className={classes.projectSite} variant='h6' component='h5'>
+                                       <Typography className={classes.projectSite} variant='subtitle2'>
                                            Deep Thoughts
                                        </Typography>
                                    </Link>
@@ -96,20 +96,20 @@ export default function Portfolio({ classes }) {
                            </Grid>
 
                            <Grid container className={classes.projectDescription} justifyContent='center'>
-                               <Typography variant='h5'> 
+                               <Typography variant='subtitle1'> 
                                    MERN STACK
                                </Typography>
                            </Grid>
 
                         </Grid>
                         
-                        <Grid item className={classes.project} xs={5}>
+                        <Grid item className={classes.project} xs={11} sm={10} lg={5}>
                             <img src={ManageIt} className={classes.featuredImage} />
                            
                             <Grid container className={classes.linksDiv} alignItems='flex-start'>
                                 <Grid container alignItems='center'>
                                     <Link href='https://cryptic-bastion-04157.herokuapp.com/' className={classes.noDecoration} target='_blank' rel='noopener'>
-                                        <Typography className={classes.projectSite} variant='h6' component='h5'>
+                                        <Typography className={classes.projectSite} variant='subtitle2'>
                                             Manage It
                                         </Typography>
                                     </Link>
@@ -120,19 +120,19 @@ export default function Portfolio({ classes }) {
                             </Grid>
 
                             <Grid container className={classes.projectDescription} justifyContent='center'>
-                                <Typography variant='h5'> 
+                                <Typography variant='subtitle1'> 
                                     FULL STACK
                                 </Typography>
                             </Grid>
                         </Grid>
                         
-                        <Grid item className={classes.project} xs={5}>
+                        <Grid item className={classes.project} xs={11} sm={10} lg={5}>
                             <img src={WeatherDashboard} className={classes.featuredImage} />
                            
                            <Grid container className={classes.linksDiv} alignItems='flex-start'>
                                <Grid container alignItems='center'>
                                    <Link href='https://xavy-romeo.github.io/weather-dashboard/' className={classes.noDecoration} target='_blank' rel='noopener'>
-                                       <Typography className={classes.projectSite} variant='h6' component='h5'>
+                                       <Typography className={classes.projectSite} variant='subtitle2'>
                                            Weather Dash
                                        </Typography>
                                    </Link>
@@ -143,19 +143,19 @@ export default function Portfolio({ classes }) {
                            </Grid>
 
                            <Grid container className={classes.projectDescription} justifyContent='center'>
-                               <Typography variant='h5'> 
+                               <Typography variant='subtitle1'> 
                                    JAVASCRIPT HTML CSS
                                </Typography>
                            </Grid>
                         </Grid>
                         
-                        <Grid item className={classes.project} xs={5}>
+                        <Grid item className={classes.project} xs={11} sm={10} lg={5}>
                             <img src={Cinfo} className={classes.featuredImage} />
                            
                            <Grid container className={classes.linksDiv} alignItems='flex-start'>
                                <Grid container alignItems='center'>
                                    <Link href='https://xavy-romeo.github.io/project-1-ucla/' className={classes.noDecoration} target='_blank' rel='noopener'>
-                                       <Typography className={classes.projectSite} variant='h6' component='h5'>
+                                       <Typography className={classes.projectSite} variant='subtitle2'>
                                            Cinfo
                                        </Typography>
                                    </Link>
@@ -166,19 +166,19 @@ export default function Portfolio({ classes }) {
                            </Grid>
 
                            <Grid container className={classes.projectDescription} justifyContent='center'>
-                               <Typography variant='h5'> 
+                               <Typography variant='subtitle1'> 
                                    JAVASCRIPT HTML CSS
                                </Typography>
                            </Grid>
                         </Grid>
                         
-                        <Grid item className={classes.project} xs={5}>
+                        <Grid item className={classes.project} xs={11} sm={10} lg={5}>
                             <img src={FoodFestival} className={classes.featuredImage} />
                            
                            <Grid container className={classes.linksDiv} alignItems='flex-start'>
                                <Grid container alignItems='center'>
                                    <Link href='https://xavy-romeo.github.io/food-festival/' className={classes.noDecoration} target='_blank' rel='noopener'>
-                                       <Typography className={classes.projectSite} variant='h6' component='h5'>
+                                       <Typography className={classes.projectSite} variant='subtitle2'>
                                            Food Festival
                                        </Typography>
                                    </Link>
@@ -189,7 +189,7 @@ export default function Portfolio({ classes }) {
                            </Grid>
 
                            <Grid container className={classes.projectDescription} justifyContent='center'>
-                               <Typography variant='h5'> 
+                               <Typography variant='subtitle1'> 
                                    PWA
                                </Typography>
                            </Grid>

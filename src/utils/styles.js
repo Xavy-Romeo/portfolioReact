@@ -1,17 +1,10 @@
-import { createTheme } from '@material-ui/core/styles';
 import { makeStyles } from '@material-ui/core/styles';
 
 // defining attributes
 const primaryColor = 'rgb(10, 163, 194);';
 const secondaryColor = 'rgb(195, 2, 2)';
 
-export const theme = createTheme({
-    typography: {
-        fontFamily: 'Cardo, Serif'
-    }
-});
-
-export const useStyles = makeStyles({
+const useStyles = makeStyles({
     headerActive: {
         transform: 'scaleY(.7) translate(0%, -30%)'
     },
@@ -40,7 +33,6 @@ export const useStyles = makeStyles({
     myName: {
         marginTop: '0px',
         color: secondaryColor,
-        fontSize: '50px',
         fontFamily: 'Kaushan Script, sans-sefif',
         fontWeight: 'bold',
         textShadow: '4px 3px black',
@@ -48,6 +40,17 @@ export const useStyles = makeStyles({
             color: 'black',
             textShadow: '3px 3px rgb(195, 2, 2)',
             transition: '1s'
+        }
+    },
+
+    menuIcon: {
+        fontSize: '60px',
+        backgroundColor: 'rgba(0,0,0,.3)',
+        border: '1px solid black',
+        color: primaryColor,
+        '&:hover': {
+            border: '1px solid white',
+            backgroundColor: 'rgb(0,0,0, .5)'
         }
     },
 
@@ -91,6 +94,13 @@ export const useStyles = makeStyles({
         }
     },
 
+    menuPaperProps: {
+        fontFamily: 'Kaushan Script, sans-sefif',
+        color: primaryColor,
+        fontSize: '24px',
+        textShadow: '1px 1px black',
+    },
+
     landingPageContainer: {
         position: 'relative',
         width: '100%',
@@ -112,7 +122,6 @@ export const useStyles = makeStyles({
         left: 0,
         width: '100%',
         height: '40vh',
-        objectFit: 'cover',
         zIndex:'8'
     },
 
@@ -127,10 +136,13 @@ export const useStyles = makeStyles({
     landingCloud: {
         position: 'absolute',
         height: '30vh',
-        left: '25%',
+        left: '10%',
         top: '2%',
-        zIndex: '7'
-        
+        zIndex: '7',
+        opacity: '0',
+        '@media (min-width:1920px)': {
+            opacity: '1'
+        } 
     },
 
     landingCloud2: {
@@ -170,8 +182,18 @@ export const useStyles = makeStyles({
         color: 'black',
         fontFamily: 'Kaushan Script, sans-sefif',
         fontWeight: 'bold',
+        fontSize: '3.2rem',
         textShadow: `4px 3px ${secondaryColor}`,
-        zIndex: '1'
+        zIndex: '1',
+        '@media (min-width:960px)': {
+            fontSize: '5rem'
+        },
+        '@media (min-width:1280px)': {
+            fontSize: '6rem'
+        },
+        '@media (min-width:1920px)': {
+            fontSize: '8rem'
+        }
     },
 
    componentMainContainer: {
@@ -183,7 +205,6 @@ export const useStyles = makeStyles({
     },
 
     sectionTitleShadow: {
-        fontSize: '120px',
         textAlign: 'center',
         width: '100%',
         color: 'white',
@@ -207,9 +228,16 @@ export const useStyles = makeStyles({
     },
 
     profilePic: {
+        display: 'flex',
+        textAlign: 'center',
         border: `5px solid ${secondaryColor}`,
         borderRadius: '30%',
         padding: '10px',
+        maxWidth: '400px',
+        '@media (max-width:1919px)': {
+            width: '80%',
+            margin: '0 auto 20px auto'
+        }
     },
 
     profilePicHello: {
@@ -276,6 +304,9 @@ export const useStyles = makeStyles({
             border: '3px solid white',
             backgroundColor: 'rgb(160,160,160)',
             outline: 'none'
+        },
+        '@media (max-width:599px)': {
+            maxWidth: '85%',
         }
     },
 
@@ -371,7 +402,7 @@ export const useStyles = makeStyles({
         borderRadius: '10px',
         padding: '5px 10px',
         marginRight: '10px',
-        width: '125px',
+        width: '140px',
         display: 'flex',
         justifyContent: 'center',
         '&:hover': {
@@ -390,6 +421,9 @@ export const useStyles = makeStyles({
             transform: 'scale(1.1)',
             backgroundColor: 'rgb(200,200,200)',
             border: `3px solid ${primaryColor}`
+        },
+        '@media (max-width:1279px)': {
+            width: '50px',
         }
     },
 
@@ -397,8 +431,12 @@ export const useStyles = makeStyles({
         border: `2px solid black`,
         borderRadius: '10px',
         backgroundColor: primaryColor,
-        margin: '15px 20% 0 20%',
-        width: '60%',
+        margin: '15px 12.5% 0 12.5%',
+        width: '75%',
+        '@media (max-width:450px)': {
+            width: '100%',
+            margin: '15px 0 0 0'
+        }
 
     },
 
@@ -415,9 +453,15 @@ export const useStyles = makeStyles({
     footerHeaderName: {
         margin: '10px',
         color: secondaryColor,
-        fontSize: '40px',
         fontFamily: 'Kaushan Script, sans-sefif',
         fontWeight: 'bold',
+    },
+
+    footerTopLogo: {
+        height: '2.5rem',
+        '@media (min-width:960px)': {
+            height: '3.125rem'
+        }
     },
 
     footerMiddle: {
@@ -443,6 +487,13 @@ export const useStyles = makeStyles({
         color: primaryColor,
         display: 'flex',
         alignItems: 'center'
+    },
+
+    footerLinks: {
+        color: primaryColor,
+        '&:hover': {
+            color: secondaryColor
+        }
     },
 
     connectLogos: {
@@ -482,9 +533,15 @@ export const useStyles = makeStyles({
         marginBottom: 0
     },
 
+    footerLogo: {
+        height: '3.75rem',
+        '@media (min-width:960px)': {
+            height: '4.375rem'
+        }
+    },
+
     footerCopy: {
         color: secondaryColor,
-        fontSize: '20px',
         fontWeight: 'bold',
     },
 
@@ -504,7 +561,11 @@ export const useStyles = makeStyles({
     },
 
     marqueeIcon: {
-        margin: '-6px 10px'
+        margin: '-6px 10px',
+        fontSize: '1.875rem',
     },
 
 });
+
+
+export default useStyles;

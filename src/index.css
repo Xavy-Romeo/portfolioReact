@@ -21,7 +21,7 @@ body {
   }
 
   .footer-marquee {
-    animation: marquee infinite 30s linear;
+    animation: marquee infinite 60s linear;
   }
 }
 
@@ -48,5 +48,5 @@ body {
 
 @keyframes marquee {
   0% {transform: translateX(100%);}
- 100% {transform: translateX(-100%);} 
+ 100% {transform: translateX(-50%);} 
 }

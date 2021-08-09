@@ -7,10 +7,10 @@ export default function Contact({ classes }) {
     return (
         <>
             <Grid container className={classes.sectionTitleContainer} justifyContent='center'>
-                <Typography className={classes.sectionTitleShadow} variant='h1'>
+                <Typography className={classes.sectionTitleShadow} variant='h6' component='h1'>
                     CONTACT
                 </Typography>
-                <Typography className={classes.sectionTitle} variant='h4' component='h3'>
+                <Typography className={classes.sectionTitle} variant='h4'>
                     Contact Me
                 </Typography>
             </Grid>

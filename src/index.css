@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: 'Cardo', serif;
+  background-color: rgb(30, 30, 30);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .react-logo {
+    animation: App-logo-spin infinite 5s linear;
+  }
+
+  .mui-logo, .xavy-logo {
+    animation: logo-flip infinite 5s linear;
+  }
+
+  .footer-marquee {
+    animation: marquee infinite 60s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes logo-flip {
+  0% {
+    transform: scaleX(1)
+  }
+  50% {
+    transform: scaleX(-1)
+  }
+  100% {
+    transform: scaleX(1)
+  }
+}
+
+@keyframes marquee {
+  0% {transform: translateX(100%);}
+ 100% {transform: translateX(-50%);} 
+}

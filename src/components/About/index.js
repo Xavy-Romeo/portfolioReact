@@ -6,7 +6,7 @@ import Hidden from '@material-ui/core/Hidden';
 
 import SentimentVerySatisfiedSharpIcon from '@material-ui/icons/SentimentVerySatisfiedSharp';
 
-import avatarPic from '../../assets/avatar.png';
+import avatarPic from '../../assets/Avatar.png';
 import plane from '../../assets/plane.jpg';
 import soccer from '../../assets/soccer.jpg';
 import weights from '../../assets/weights.jpg'

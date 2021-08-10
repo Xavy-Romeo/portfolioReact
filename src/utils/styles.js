@@ -17,7 +17,7 @@ const useStyles = makeStyles({
     },
 
     toolBar: {
-        justifyContent: 'space-between',
+        justifyContent: 'space-between'
     },
 
     noDecoration: {

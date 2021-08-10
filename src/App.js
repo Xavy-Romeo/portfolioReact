@@ -33,7 +33,6 @@ const [currentSection, setCurrentSection] = useState(navSection[0]);
       <Header 
         classes={classes}
         setNavActive={setNavActive}
-        navActive={navActive}
         setCurrentSection={setCurrentSection}
         navSection={navSection}
       />

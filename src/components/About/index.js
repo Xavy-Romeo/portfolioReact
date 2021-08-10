@@ -14,8 +14,6 @@ import weights from '../../assets/weights.jpg'
 export default function About({ classes }) {
     const [profileHover, setProfileHover] = useState(false);
 
-    // window.scrollTo(0,0);
-
     return (
         <>
             <Grid container className={classes.sectionTitleContainer} justifyContent='center'>
@@ -58,7 +56,7 @@ export default function About({ classes }) {
                         <span className={classes.sectionTextSpan}>
                             Full Stack Software Engineer
                         </span>
-                        . While I specialize in MERN stack (MongoDB, Express.js, React, Node.js), I am easily adaptable and capable
+                        . While I specialize in MERN stack (MongoDB, Express, React, Node), I am easily adaptable and capable
                         of using any stack. I'm the guy who makes things work, plain and simple. It is always satisfying to see what 
                         I create once the project is complete.
                     </Typography>

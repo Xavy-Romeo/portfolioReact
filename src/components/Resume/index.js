@@ -3,6 +3,11 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Paper from '@material-ui/core/Paper';
+import Button from '@material-ui/core/Button';
+import Link from '@material-ui/core/Link';
+
+import ResumePdf from '../../assets/resume.pdf';
+import ResumeImg from '../../assets/resume.png'
 
 export default function Resume({ classes }) {
     window.scrollTo(0,0);
@@ -19,11 +24,19 @@ export default function Resume({ classes }) {
             </Grid>
 
             <Grid container className={classes.componentMainContainer} justifyContent='center'>
-                <Paper>
-                    MY RESUME POSTED HERE
-                    PENDING PENDING PENDING
-                </Paper>
-                
+                <Grid item xs={12}>
+                    <img src={ResumeImg} className={classes.resumeImg} />
+                </Grid>
+                <Link 
+                    download='Xavy Romeo - Resume'
+                    href={ResumePdf}
+                >
+                    <Button className={classes.resumeButton} variant='contained'>
+                        <Typography variant='subtitle2'>
+                            Download Resume
+                        </Typography>
+                    </Button>
+                </Link>  
             </Grid>
         </>
     );

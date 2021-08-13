@@ -7,11 +7,11 @@ import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 
 import Sea from '../assets/sea.png';
-import Sun from '../assets/sun.webp';
+import Sun from '../assets/sun.png';
 import Yatch from '../assets/yatch.png';
 import Ship from '../assets/pirate-ship.png';
 import Cloud from '../assets/cloud.png';
-import Palm from '../assets/palm-tree.webp'
+import Palm from '../assets/palm-tree.png'
 
 
 

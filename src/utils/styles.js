@@ -440,6 +440,22 @@ const useStyles = makeStyles({
 
     },
 
+    resumeImg: {
+        height: '75vh',
+        width: 'calc(75vh*0.773)',
+        maxWidth: '90vw',
+        display: 'flex',
+        margin: '0 auto',
+        '@media (max-width:750px)': {
+            height:'calc(90vw*1.294)'
+        }
+    },
+
+    resumeButton: {
+        marginTop: '15px',
+        backgroundColor: primaryColor,
+    },
+
     footerTop: {
         backgroundColor: 'rgba(10, 10, 10)',
     }, 
